@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+  <head>
+  </head>
+  <body>
+    {% for view in views %}
+        <img src="{{ url_for('static', filename=view) }}" alt="{{ view }}" >
+    {% endfor %}
+  </body>
+</html>
+
+
